@@ -1,6 +1,6 @@
 This is for everything I've found so far while studying for the OSCP. 
 
-### How to compile
+## How to compile
 
 For compiling the module.c
 ```
@@ -8,7 +8,7 @@ gcc -fPIC -std=gnu99 -c -o module.o module.c
 ld -o module.so module.o -shared -Bsymbolic -lc
 ```
 
-### With module.so
+## With module.so
 
 This module.so is a compiled file from this repo:
 https://github.com/n0b0dyCN/RedisModules-ExecuteCommand
@@ -54,7 +54,7 @@ That's for this module.so attack.
 It should look like this:
 <img width="1746" height="843" alt="image" src="https://github.com/user-attachments/assets/6dca2a4d-1782-49bb-9ed3-4ac747c8177e" />
 
-### Things to Keep in Mind
+## Things to Keep in Mind
 
 You can also use redis-cli
 ```
