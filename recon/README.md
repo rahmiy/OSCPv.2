@@ -39,8 +39,20 @@ whatweb $target
 I stick with dirserch for the most part:
 ```
 dirsearch -u http://$target
+gobuster dir -u $target -w /usr/share/wordlists/dirb/common.txt -t 5
 ```
-Stick to the raft medium list from seclist for the most part
+Stick to the raft medium list from seclist for the most part, big text from dirb works too. 
+
+API attacks:
+```
+gobuster dir -u http://$target -w /usr/share/wordlists/dirb/big.txt -p pattern
+curl -i http://$target/users/v1
+```
+
+Burp notes:
+Focus on sending to the repeater and checking on the response. 
+For more of an attack pattern on SQL Injection or brute force:
+Send that to the intruder and use the sniper. 
 
 ## LFI/RFI
 ```
@@ -66,3 +78,25 @@ Or port 2222
 ssh -i id_rsa -p 2222 user@$target
 ```
 
+## Wordpress
+```
+wpscan --url http://<TARGET_IP>/ --enumerate vp,vt,cb,dbe,u --no-update
+```
+```
+wpscan --url http://<TARGET_IP>/ --enumerate ap --plugins-detection aggressive
+```
+```
+ffuf -u http://<TARGET_IP>/wp-content/plugins/FUZZ -w /usr/share/seclists/Discovery/Web-Content/wp-plugins.txt
+```
+
+## Command Injection
+```
+ffuf -u http://10.10.10.10 -w /usr/share/seclists/Fuzzing/command-injection.txt
+```
+
+For the most part, I made active notes here:
+https://medium.com/@aaronashley466/oscp-notes-recon-and-methodology-initial-access-cheatsheet-f2c0daf1f34c
+https://medium.com/@aaronashley466/ospc-notes-sql-injection-cheatsheet-0788f4624702
+https://medium.com/@aaronashley466/oscp-notes-web-application-attacks-cheatsheet-61641090ee90
+
+All go over the same thing. 
