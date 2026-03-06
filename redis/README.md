@@ -114,6 +114,7 @@ bash -p
 ```
 Should get root afterwards. 
 
+Also made a blog post about it here:
 
-
+https://medium.com/@aaronashley466/oscp-notes-redis-cheat-sheet-dc1ec70fa05d
 
