@@ -18,7 +18,7 @@ Then run it like this:
 ```
 python scan.py -t 192.168.1.10 -p 22,80,443 -a "-sC -sV -v"
 ```
-Repo here:https://github.com/HackingHusky/python-nmap-scan
+Repo here: https://github.com/HackingHusky/python-nmap-scan
 
 UDP Scan:
 ```
