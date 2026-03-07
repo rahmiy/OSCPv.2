@@ -14,3 +14,8 @@ searchsploit $(cat scan.nmap | grep open | awk '{print $3}')`
 grep open scan.nmap | awk '{print $3}' | xargs searchsploit
 ```
 
+## Recon Script
+```
+chmod +x recon.sh
+./recon.sh 10.10.10.10
+```
