@@ -1,15 +1,4 @@
 # AD attacks
-## Attack Flow
-
-Initial Foothold
-      ↓
-Find Credentials
-      ↓
-Lateral Movement
-      ↓
-Domain Privilege Escalation
-      ↓
-Domain Admin
 
 ## Tools
 https://www.kali.org/tools/kerberoast/
