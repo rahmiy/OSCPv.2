@@ -1,4 +1,4 @@
-Simple commands:
+# Simple commands:
 
 ```
 sudo gzip -d /usr/share/wordlist/rockyou.txt.gz
@@ -40,6 +40,14 @@ John is simple:
 ```
 john --wordlist=/usr/share/wordlists/rockyou.txt hash.txt
 ```
+## Password Spraying
+```
+crackmapexec smb $target --users
+```
+```
+nxc smb $target -u users.txt -p Password123
+```
+
 I go over it in detail here:
 
 https://medium.com/@aaronashley466/oscp-notes-cracking-passwords-and-stabilizing-shells-python-quick-on-the-fly-fixes-cheatsheet-bc7c556ba811
