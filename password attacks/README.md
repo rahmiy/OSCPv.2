@@ -1,5 +1,6 @@
 # Simple commands:
 
+## Unzipping Rockyou.txt
 ```
 sudo gzip -d /usr/share/wordlist/rockyou.txt.gz
 ```
