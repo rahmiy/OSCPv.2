@@ -18,6 +18,7 @@ Then run it like this:
 ```
 python scan.py -t 192.168.1.10 -p 22,80,443 -a "-sC -sV -v"
 ```
+
 Repo here: https://github.com/HackingHusky/python-nmap-scan
 
 UDP Scan:
@@ -110,6 +111,15 @@ chmod +x oscp-recon.sh
 ./oscp-recon.sh $target
 ```
 This will do a lot of heavy lifting
+
+
+Then use cat-results script
+```
+chmod +x cat-results.sh
+```
+```
+./cat-results.sh 10.10.10.10
+```
 
 For the most part, I made active notes here:
 
