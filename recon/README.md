@@ -120,8 +120,13 @@ ffuf -u http://<TARGET_IP>/wp-content/plugins/FUZZ -w /usr/share/seclists/Discov
 ```
 
 ## Command Injection
+### Test
 ```
 ffuf -u http://10.10.10.10 -w /usr/share/seclists/Fuzzing/command-injection.txt
+```
+### Script cmdi_fuzz.py
+```
+python3 cmdi_fuzz.py http://TARGET/page.php ip 127.0.0.1
 ```
 
 ## OSCP Recon Bash
