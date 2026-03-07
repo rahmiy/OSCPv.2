@@ -3,7 +3,7 @@
 ## Tools
 https://www.kali.org/tools/kerberoast/
 
-## Kerbrute Install and use
+## Kerbrute Install and Use
 ### Install
 ```
 wget https://github.com/ropnop/kerbrute/releases/latest/download/kerbrute_linux_amd64
