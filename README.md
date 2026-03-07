@@ -1,5 +1,6 @@
 # My OSCP Repo and Journey 
-<img width="1024" height="1024" alt="Husky hacker with character on screen" src="https://github.com/user-attachments/assets/0d360762-97ae-4fe2-a067-c7f70faabb1e" />
+<img width="1024" height="1024" alt="Husky hacker hiding at desk with hack smarter" src="https://github.com/user-attachments/assets/9aa18117-988c-4af3-aac7-596dbacda55d" />
+
 
 ## Welcome! 
 
