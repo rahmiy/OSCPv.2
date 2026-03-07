@@ -18,6 +18,12 @@ Or if you want to save the output:
 ```
 The scripts will also do the same. You would need to share it. 
 
+## linpeas
+
+```
+git clone https://github.com/peass-ng/PEASS-ng/releases/tag/20260306-5620909d
+```
+
 ## Write up
 
 I got over it more in my blog post here:
