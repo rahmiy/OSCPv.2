@@ -99,6 +99,15 @@ Or port 2222
 ssh -i id_rsa -p 2222 user@$target
 ```
 
+## SQLI Recon python script
+### Install this first
+```
+pip install requests
+```
+Then run it like this:
+```
+python3 sqli_recon.py "http://target.local/product.php?id=1"
+```
 ## Wordpress
 ```
 wpscan --url http://<TARGET_IP>/ --enumerate vp,vt,cb,dbe,u --no-update
