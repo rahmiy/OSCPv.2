@@ -76,6 +76,7 @@ dirsearch -u http://$target
 
 ## Other quick links you can use
 https://www.kali.org/tools/evil-winrm-py/ --> python evil-winrm, works the same as evil-winrm
+
 https://www.kali.org/tools/unicornscan/ --> great network scan
 
 
