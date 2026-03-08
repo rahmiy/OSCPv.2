@@ -119,7 +119,7 @@ https://github.com/n0b0dyCN/redis-rogue-server --> Great tool
 
 I did have to fix the exp.c file
 <img width="1517" height="881" alt="image" src="https://github.com/user-attachments/assets/61685380-3582-40c1-b173-b0aadc4e7ad8" />
-So, for redis-rouge-server, remove the makefile and use exp.c to build the file. Now the exp.so is in the repo, but if you need a fresh one, replace the current one with this updated one. Not sure why it's having so many compile issues. 
+So, for redis-rouge-server, remove the makefile and use exp.c to build the file. Now the exp.so is in the repo, but if you need a fresh one, replace the current one with this updated one. Not sure why it's having so many compile issues. I also included the exp.so file I remade just in case. 
 
 ## Links
 Also made a blog post about it here:
