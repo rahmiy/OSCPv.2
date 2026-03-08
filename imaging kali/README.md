@@ -81,6 +81,19 @@ https://www.kali.org/tools/unicornscan/ --> great network scan
 
 https://www.kali.org/tools/freerdp3/ --> RDP
 
+Hack Tools extension:
+
+<img width="1695" height="736" alt="image" src="https://github.com/user-attachments/assets/4868512b-af9b-4558-bbff-a7538b55cf91" />
+
+FoxyProxy:
+
+<img width="1519" height="735" alt="image" src="https://github.com/user-attachments/assets/91ccf4f2-c441-4e31-98ac-5c69fbda3222" />
+
+Wappyalyzer:
+
+<img width="1238" height="623" alt="image" src="https://github.com/user-attachments/assets/05c60c85-b046-4708-b3a1-ef59d3825039" />
+
+
 https://github.com/swisskyrepo/PayloadsAllTheThings --> refer to this repo
 
 https://www.kali.org/tools/seclists/ --> install seclists
