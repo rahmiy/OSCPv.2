@@ -20,5 +20,5 @@ chmod +x recon.sh
 ./recon.sh 10.10.10.10
 ```
 
-## Link on CTF enumeration too 
+## Link on CTF enumeration and tips 
 https://medium.com/@aaronashley466/oscp-ctf-tips-and-tricks-835e7c2ab96a
