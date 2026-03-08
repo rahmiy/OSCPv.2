@@ -1,4 +1,5 @@
 # Linux PrivEsc
+<img width="1024" height="1024" alt="Husky hacker linux privesc" src="https://github.com/user-attachments/assets/4cb89d22-e761-4975-81f9-d6ffbd9f57f8" />
 
 ## Manual Checks:
 
