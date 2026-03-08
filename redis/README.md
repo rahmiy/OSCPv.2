@@ -121,8 +121,10 @@ I did have to fix the exp.c file
 <img width="1517" height="881" alt="image" src="https://github.com/user-attachments/assets/61685380-3582-40c1-b173-b0aadc4e7ad8" />
 So, for redis-rouge-server, remove the makefile and use exp.c to build the file. Now the exp.so is in the repo, but if you need a fresh one, replace the current one with this updated one. Not sure why it's having so many compile issues. I also included the exp.so file I remade just in case. 
 
+https://github.com/Ridter/redis-rce --> also may need the exp.so file, great tool too
+
 ## Links
-Also made a blog post about it here:
+Also made a blog post about it here with more tools:
 
 https://medium.com/@aaronashley466/oscp-notes-redis-cheat-sheet-dc1ec70fa05d
 
