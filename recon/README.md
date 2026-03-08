@@ -1,4 +1,6 @@
 ## Recon
+<img width="1024" height="1024" alt="Husky hacker using nmap" src="https://github.com/user-attachments/assets/47e617d0-e303-46fa-9b0b-1bc41da7c175" />
+
 
 Nmap, this is my to-go:
 ```
