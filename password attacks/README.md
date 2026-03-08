@@ -1,4 +1,6 @@
 # Simple commands:
+<img width="1024" height="1024" alt="Husky hacker working on password attacks" src="https://github.com/user-attachments/assets/2d872f0e-c2c2-4a38-ba42-ece933f15619" />
+
 
 ## Unzipping Rockyou.txt
 ```
