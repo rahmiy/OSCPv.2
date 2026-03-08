@@ -1,6 +1,9 @@
 # Windows PrivEsc 
 
-### Both AD and Windows PrivEsc go together 
+## Both AD and Windows PrivEsc go together 
+### Workflow:
+<img width="1316" height="871" alt="image" src="https://github.com/user-attachments/assets/71463e35-0344-4280-88f7-4203f0016c0f" />
+
 
 ## Manual look up
 
