@@ -104,3 +104,4 @@ Wine, you'll need it in some cases
 ```
 sudo apt install wine
 ```
+https://www.kali.org/tools/mssqlpwner/ --> must have for mssql 
