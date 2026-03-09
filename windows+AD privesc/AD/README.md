@@ -1,4 +1,6 @@
 # AD attacks
+<img width="1024" height="1024" alt="Husky hacker using blood hound" src="https://github.com/user-attachments/assets/53b44aaf-7738-4138-9e3b-4de20b368ce4" />
+
 
 ## Credfiles
 Could be in the xxamp folder, dump SAM, a sql data base, look for everything!
