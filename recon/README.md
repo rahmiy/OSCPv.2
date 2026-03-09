@@ -157,6 +157,15 @@ chmod +x cat-results.sh
 ./cat-results.sh 10.10.10.10
 ```
 
+Curl users too with the api and enumeration:
+
+```
+curl -i http://$target:port/users/v1
+```
+```
+gobuster dir -u http://$target/users/v1/admin/ -w /usr/share/wordlists/dirb/small.txt
+```
+
 For the most part, I made active notes here:
 
 https://medium.com/@aaronashley466/oscp-notes-recon-and-methodology-initial-access-cheatsheet-f2c0daf1f34c
