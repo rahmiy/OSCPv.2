@@ -30,6 +30,12 @@ sudo apt update && sudo apt install exploitdb
 ```
 It may need an update from time to time
 
+Commands:
+```
+searchsploit "exploit"
+searchsploit -m number that fits the exploit
+```
+
 With nmap too:
 
 Examples
