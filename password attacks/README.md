@@ -46,6 +46,15 @@ John is simple:
 ```
 john --wordlist=/usr/share/wordlists/rockyou.txt hash.txt
 ```
+John with Linux:
+```
+sudo unshadow passwd.bak shadow.bak > serverpass
+john --wordlist=list.txt serverpass
+```
+```
+john --format=sha512crypt shadow.bak
+```
+Or shadow itself
 ## Password Spraying
 ```
 crackmapexec smb $target --users
