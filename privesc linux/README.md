@@ -68,6 +68,8 @@ su pwned
 ```
 git clone https://github.com/peass-ng/PEASS-ng/releases/tag/20260306-5620909d
 ```
+## PSPY link
+https://github.com/DominicBreuker/pspy/releases/tag/v1.2.1
 
 ## Write up
 
