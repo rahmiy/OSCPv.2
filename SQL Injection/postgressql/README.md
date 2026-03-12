@@ -14,5 +14,7 @@ https://github.com/squid22/PostgreSQL_RCE --> quick RCE
 https://hackviser.com/tactics/pentesting/services/postgresql
 
 https://github.com/b4keSn4ke/CVE-2019-9193
+
 https://github.com/paulotrindadec/CVE-2019-9193
+
 https://www.exploit-db.com/exploits/50847
